@@ -100,19 +100,15 @@ message += "Address: " + address + "%0A";
 message += "%0A";
 message += "*Order Details*%0A";
 
-cards.forEach(card => {
+for (let product in orderList) {
 
-const product = card.querySelector("h3").innerText;
+if(orderList[product] > 0){
 
-const qty = orderList[product] || 0;
-
-if(qty > 0){
-
-message += product + " × " + qty + "%0A";
+message += product + " × " + orderList[product] + "%0A";
 
 }
 
-});
+}
 
 message += "%0A";
 message += "Selected Items: " + selected + "%0A";
