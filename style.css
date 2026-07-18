@@ -137,3 +137,23 @@ transition:0.3s;
 .back-btn:hover{
 background:white;
   }
+.customer-form{
+background:#222;
+margin:15px;
+padding:15px;
+border-radius:12px;
+}
+
+.customer-form h3{
+color:gold;
+margin-bottom:12px;
+}
+
+.customer-form input{
+width:100%;
+padding:12px;
+margin-bottom:10px;
+border:none;
+border-radius:8px;
+font-size:16px;
+}
