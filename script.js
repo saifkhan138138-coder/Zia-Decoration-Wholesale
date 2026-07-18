@@ -5,7 +5,7 @@ const totalQty = document.getElementById("totalQty");
 
 let selected = 0;
 let quantity = 0;
-
+let orderList = {};
 cards.forEach(card => {
 
 const minus = card.querySelectorAll("button")[0];
