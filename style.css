@@ -118,6 +118,9 @@ cursor:pointer;
 }
 .topbar{
 position:relative;
+display:flex;
+align-items:center;
+min-height:60px;
 }
 
 .back-btn{
