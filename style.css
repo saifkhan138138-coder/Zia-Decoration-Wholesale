@@ -13,8 +13,12 @@ color:white;
 .topbar{
 background:black;
 color:gold;
-text-align:center;
+display:flex;
+align-items:center;
+justify-content:center;
+position:relative;
 padding:15px;
+min-height:60px;
 font-size:24px;
 font-weight:bold;
 }
