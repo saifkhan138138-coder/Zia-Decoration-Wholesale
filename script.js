@@ -111,8 +111,8 @@ message += product + " × " + orderList[product] + "%0A";
 }
 
 message += "%0A";
-message += "Selected Items: " + selected + "%0A";
-message += "Total Quantity: " + quantity + "%0A%0A";
+message += "Selected Items: " + Object.keys(orderList).length + "%0A";
+message += "Total Quantity: " + Object.values(orderList).reduce((a,b)=>a+b,0) + "%0A%0A";
 
 window.open(
 "https://wa.me/923402000374?text=" + message,
