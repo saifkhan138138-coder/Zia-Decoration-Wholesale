@@ -97,7 +97,7 @@ message += "City: " + city + "%0A";
 if(address!=""){
 message += "Address: " + address + "%0A";
 }
-
+message += "%0A";
 message += "*Order Details*%0A";
 
 cards.forEach(card=>{
