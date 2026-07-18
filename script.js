@@ -101,9 +101,11 @@ message += "Address: " + address + "%0A";
 message += "%0A";
 message += "*Order Details*%0A";
 
-for(let product in orderList){
+Object.keys(orderList).forEach(function(product){
+
 message += product + " × " + orderList[product] + "%0A";
-}
+
+});
 
 message += "%0A";
 message += "Selected Items: " + selected + "%0A";
