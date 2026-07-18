@@ -128,7 +128,7 @@ message += "Total Quantity: " + totalQty.innerText + "%0A%0A";
 
 
 window.open(
-"https://wa.me/923402000374?text=" + message,
+"https://wa.me/923456611435?text=" + message,
 "_blank"
 );
 
