@@ -52,6 +52,7 @@ delete orderList[productNo];
 }else{
 orderList[productNo]=qty;
   }
+console.log(orderList);
 quantity--;
 
 if(qty==0){
