@@ -21,7 +21,7 @@ plus.onclick = () => {
 qty++;
 
 number.innerText = qty;
-
+orderList[productNo] = qty;
 quantity++;
 
 if(qty==1){
