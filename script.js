@@ -99,7 +99,13 @@ message += "Address: " + address + "%0A";
 }
 
 message += "%0A";
+message += "*Order Details*%0A";
 
+for(let product in orderList){
+message += product + " × " + orderList[product] + "%0A";
+}
+
+message += "%0A";
 message += "Selected Items: " + selected + "%0A";
 message += "Total Quantity: " + quantity + "%0A%0A";
 
