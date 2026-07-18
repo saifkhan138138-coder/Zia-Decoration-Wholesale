@@ -104,7 +104,12 @@ width:100%;
 padding:15px;
 background:black;
 }
-
+.topbar h2{
+flex:1;
+text-align:center;
+margin:0;
+font-size:20px;
+}
 #orderBtn{
 width:100%;
 padding:15px;
@@ -131,6 +136,7 @@ cursor:pointer;
 .back-btn:hover{
 background:white;
   }
+
 .customer-form{
 background:#222;
 margin:15px;
