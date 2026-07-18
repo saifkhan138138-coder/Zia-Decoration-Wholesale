@@ -15,7 +15,7 @@ const number = card.querySelector("span");
 const tick = card.querySelector(".tick");
 
 let qty = 0;
-
+const productNo = card.querySelector("h3").innerText;
 plus.onclick = () => {
 
 qty++;
