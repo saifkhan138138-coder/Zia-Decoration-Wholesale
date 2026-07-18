@@ -98,12 +98,19 @@ if(address!=""){
 message += "Address: " + address + "%0A";
 }
 
-message += "%0A";
 message += "*Order Details*%0A";
 
-Object.keys(orderList).forEach(function(product){
+cards.forEach(card=>{
 
-message += product + " × " + orderList[product] + "%0A";
+const product = card.querySelector("h3").innerText;
+
+const qty = parseInt(card.querySelector("span").innerText);
+
+if(qty>0){
+
+message += product + " × " + qty + "%0A";
+
+}
 
 });
 
