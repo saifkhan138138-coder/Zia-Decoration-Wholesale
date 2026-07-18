@@ -47,7 +47,11 @@ if(qty>0){
 qty--;
 
 number.innerText=qty;
-
+if(qty==0){
+delete orderList[productNo];
+}else{
+orderList[productNo]=qty;
+  }
 quantity--;
 
 if(qty==0){
