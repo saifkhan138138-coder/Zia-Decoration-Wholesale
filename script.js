@@ -98,22 +98,34 @@ message += "City: " + city + "%0A";
 if(address!=""){
 message += "Address: " + address + "%0A";
 }
+
 message += "%0A";
 message += "*Order Details*%0A";
 
-for (let product in orderList) {
 
-if(orderList[product] > 0){
+cards.forEach(card => {
 
-message += product + " × " + orderList[product] + "%0A";
+let product = card.querySelector("h3").innerText;
+
+let qty = parseInt(
+card.querySelector(".qty span").innerText
+);
+
+if(qty > 0){
+
+message += product + " × " + qty + "%0A";
 
 }
 
-}
+});
+
 
 message += "%0A";
-message += "Selected Items: " + Object.keys(orderList).length + "%0A";
-message += "Total Quantity: " + Object.values(orderList).reduce((a,b)=>a+b,0) + "%0A%0A";
+
+message += "Selected Items: " + selectedItems.innerText + "%0A";
+
+message += "Total Quantity: " + totalQty.innerText + "%0A%0A";
+
 
 window.open(
 "https://wa.me/923402000374?text=" + message,
