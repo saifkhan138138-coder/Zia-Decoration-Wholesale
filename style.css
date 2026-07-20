@@ -500,6 +500,22 @@ footer h3{
     }
 
 }
+@media(max-width:600px){
 
+.title-area h1{
+    font-size:25px;
+}
+
+.title-area p{
+    font-size:15px;
+}
+
+.back-btn{
+    padding:7px 14px;
+    top:14px;
+    left:10px;
+}
+
+}
 
 
