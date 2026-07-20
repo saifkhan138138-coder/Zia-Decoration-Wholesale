@@ -16,53 +16,142 @@ font-family:Arial,sans-serif;
 }
 
 body{
-background:#111;
-color:white;
-text-align:center;
+background:#0d4b2a;
+overflow-x:hidden;
 }
 
 .hero{
+
 height:100vh;
-background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),
-url("https://images.unsplash.com/photo-1513694203232-719a280e022f?w=1200");
-background-size:cover;
-background-position:center;
+
 display:flex;
+
 justify-content:center;
+
 align-items:center;
-padding:20px;
+
+padding:25px;
+
+position:relative;
+
+background:
+linear-gradient(rgba(8,40,20,.78),rgba(8,40,20,.88)),
+url("background.jpg");
+
+background-size:cover;
+
+background-position:center;
+
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+
+left:0;
+
+right:0;
+
+bottom:0;
+
+background:
+radial-gradient(circle at top right,rgba(255,215,0,.20),transparent 40%),
+radial-gradient(circle at bottom left,rgba(255,255,255,.08),transparent 35%);
+
 }
 
 .content{
+
+position:relative;
+
+z-index:2;
+
+width:100%;
+
 max-width:700px;
+
+text-align:center;
+
+}
+
+.top-contact{
+
+display:inline-block;
+
+padding:10px 22px;
+
+background:rgba(255,255,255,.12);
+
+border:1px solid rgba(255,215,0,.40);
+
+border-radius:40px;
+
+color:#fff;
+
+font-size:18px;
+
+margin-bottom:30px;
+
 }
 
 h1{
-font-size:48px;
-color:gold;
+
+font-size:52px;
+
+color:#FFD700;
+
 margin-bottom:15px;
+
+font-weight:bold;
+
+text-shadow:2px 2px 8px black;
+
 }
 
-p{
-font-size:20px;
-margin-bottom:35px;
-line-height:30px;
+.tagline{
+
+font-size:22px;
+
+color:white;
+
+line-height:35px;
+
+margin-bottom:40px;
+
 }
 
 .btn{
+
 display:inline-block;
-background:gold;
-color:black;
-padding:16px 40px;
+
+padding:18px 45px;
+
+background:linear-gradient(#FFD700,#d4af37);
+
+color:#05351d;
+
 text-decoration:none;
-font-size:22px;
+
+font-size:24px;
+
 font-weight:bold;
-border-radius:40px;
+
+border-radius:50px;
+
+box-shadow:0 8px 25px rgba(0,0,0,.35);
+
 transition:.3s;
+
 }
 
 .btn:hover{
-background:white;
+
+transform:scale(1.05);
+
 }
 
 </style>
@@ -75,14 +164,28 @@ background:white;
 
 <div class="content">
 
-<h1>Zia Decoration Wholesale</h1>
+<div class="top-contact">
 
-<p>
-Premium Home Décor & Gift Collection
+📱 WhatsApp: 0340-2000374
+
+</div>
+
+<h1>
+
+Zia Decoration Wholesale
+
+</h1>
+
+<p class="tagline">
+
+Premium Decoration • Gift Items • Home Décor
+
 </p>
 
 <a href="products.html" class="btn">
+
 Open Products
+
 </a>
 
 </div>
@@ -90,4 +193,4 @@ Open Products
 </section>
 
 </body>
-  </html>
+</html>
