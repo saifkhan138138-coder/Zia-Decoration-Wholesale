@@ -259,18 +259,43 @@ footer h3{
 .open-btn
 /* Products Page Design */
 
+/* Premium Products Header */
+
 .topbar{
-    background:#064d2b;
-    color:white;
-    padding:15px;
-    display:grid;
-    grid-template-columns:auto 1fr auto;
-    align-items:center;
-    border-bottom:3px solid #d4af37;
+    background:linear-gradient(135deg,#064d2b,#0b7a45);
+    border-bottom:4px solid #d4af37;
+    padding:18px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 5px 15px rgba(0,0,0,.20);
 }
 
-.topbar div{
-    text-align:center;
+.title-area h1{
+    color:#d4af37;
+    font-size:32px;
+    margin:0;
+    font-weight:bold;
+    text-shadow:0 2px 6px rgba(0,0,0,.35);
+}
+
+.title-area p{
+    color:white;
+    margin-top:6px;
+    font-size:17px;
+}
+
+.back-btn{
+    position:absolute;
+    left:15px;
+    top:18px;
+
+    background:#d4af37;
+    color:#064d2b;
+
+    text-decoration:none;
+    padding:9px 18px;
+    border-radius:30px;
+    font-weight:bold;
 }
 
 .back-btn{
