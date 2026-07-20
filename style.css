@@ -493,3 +493,47 @@ footer h3{
     color:#0b6b3a;
     font-size:16px;
     }
+
+.hero{
+    position:relative;
+    width:100%;
+    max-width:500px;
+    margin:auto;
+}
+
+.hero-img{
+    width:100%;
+    display:block;
+}
+
+.open-btn{
+
+    position:absolute;
+
+    left:50%;
+    bottom:18%;
+
+    transform:translateX(-50%);
+
+    background:#0b7a45;
+    color:#fff;
+
+    text-decoration:none;
+
+    font-size:22px;
+    font-weight:bold;
+
+    padding:18px 45px;
+
+    border-radius:50px;
+
+    box-shadow:0 6px 18px rgba(0,0,0,.35);
+
+    transition:.3s;
+}
+
+.open-btn:hover{
+
+    background:#064d2b;
+
+        }
