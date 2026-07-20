@@ -113,3 +113,83 @@ body{
 .open-btn:hover{
     background:white;
 }
+.categories{
+    padding:40px 15px;
+    text-align:center;
+}
+
+.categories h2{
+    color:#064d2b;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+.category-box{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+}
+
+.category-box div{
+    background:white;
+    padding:25px 15px;
+    border-radius:15px;
+    border:2px solid #d4af37;
+    font-size:18px;
+    font-weight:bold;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.category-box div:hover{
+    transform:translateY(-8px);
+}
+
+
+footer{
+    background:#064d2b;
+    color:white;
+    text-align:center;
+    padding:25px 10px;
+    border-top:4px solid #d4af37;
+}
+
+footer h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+
+.summary{
+    padding:20px 15px;
+    text-align:center;
+}
+
+.search-area{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+.search-area input{
+    padding:12px;
+    width:70%;
+    max-width:300px;
+    border:2px solid #d4af37;
+    border-radius:25px;
+}
+
+.search-area button{
+    background:#064d2b;
+    color:white;
+    border:none;
+    border-radius:50%;
+    width:45px;
+    height:45px;
+}
+
+.counter{
+    margin-top:15px;
+    font-weight:bold;
+    color:#064d2b;
+}
