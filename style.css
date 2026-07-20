@@ -231,3 +231,21 @@ footer h3{
     padding:10px 20px;
     border-radius:30px;
     }
+/* Final Home Finishing */
+
+.top-header{
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+
+.hero-content h2{
+    letter-spacing:1px;
+}
+
+
+.open-btn{
+    border:2px solid #d4af37;
+}
+
+
+.open-btn
