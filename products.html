@@ -13,42 +13,68 @@
 
 <body>
 
+
 <header class="topbar">
 
 <a href="index.html" class="back-btn">← Back</a>
 
+<div>
 <h2>Zia Decoration Wholesale</h2>
+<p>Our Premium Collection</p>
+</div>
 
 </header>
 
-<div class="summary">
+
+
+<section class="summary">
+
 
 <div class="search-area">
-  <input type="number" id="searchBox" placeholder="Search Product Number">
-  <button id="searchBtn">🔍</button>
+
+<input type="number" id="searchBox" placeholder="Search Product Number">
+
+<button id="searchBtn">
+🔍
+</button>
+
 </div>
+
+
 
 <div class="counter">
 
-<p>Selected Items :
-<span id="selectedItems">0</span></p>
+<p>
+Selected Items :
+<span id="selectedItems">0</span>
+</p>
 
-<p>Total Quantity :
-<span id="totalQty">0</span></p>
+
+<p>
+Total Quantity :
+<span id="totalQty">0</span>
+</p>
+
 
 </div>
 
-</div>
 
-<div class="products">
+</section>
 
-<!-- Product 1 -->
 
-<div class="card">
+
+
+<section class="products">
+
+
+
+<div class="card" data-number="001">
+
 
 <h3>#001</h3>
 
-<img src="images/001.jpg" alt="Product">
+<img src="images/001.jpg" alt="Product 001">
+
 
 <div class="qty">
 
@@ -58,19 +84,28 @@
 
 <button>+</button>
 
-</div>
-
-<div class="tick">✔</div>
 
 </div>
 
-<!-- Product 2 -->
 
-<div class="card">
+<div class="tick">
+✔
+</div>
+
+
+</div>
+
+
+
+
+
+<div class="card" data-number="002">
+
 
 <h3>#002</h3>
 
-<img src="images/002.jpg" alt="Product">
+<img src="images/002.jpg" alt="Product 002">
+
 
 <div class="qty">
 
@@ -80,27 +115,53 @@
 
 <button>+</button>
 
-</div>
-
-<div class="tick">✔</div>
 
 </div>
 
+
+<div class="tick">
+✔
 </div>
-<div class="customer-form">
+
+
+</div>
+
+
+
+</section>
+
+
+
+
+
+
+<section class="customer-form">
+
 
 <h3>Customer Information</h3>
 
-<input type="text" id="customerName" placeholder="Customer Name" required>
 
-<input type="tel" id="customerPhone" placeholder="Mobile Number" required>
+<input type="text" id="customerName" placeholder="Customer Name">
 
-<input type="text" id="customerCity" placeholder="City" required>
+
+<input type="tel" id="customerPhone" placeholder="Mobile Number">
+
+
+<input type="text" id="customerCity" placeholder="City">
+
 
 <input type="text" id="customerAddress" placeholder="Address (Optional)">
 
-</div>
+
+
+</section>
+
+
+
+
+
 <div class="order">
+
 
 <button id="orderBtn">
 
@@ -108,9 +169,15 @@ Order on WhatsApp
 
 </button>
 
+
 </div>
+
+
+
+
 
 <script src="script.js"></script>
 
+
 </body>
-  </html>
+</html>
