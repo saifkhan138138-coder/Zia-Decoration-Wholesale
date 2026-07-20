@@ -477,45 +477,6 @@ footer h3{
 @media(max-width:600px){
 
     .products{
-        grid-template-columns:repeat(2,minmax(0,1fr));
-        gap:12px;
-        padding:12px;
-    }
-
-    .card{
-        padding:10px;
-    }
-
-    .card img{
-        height:130px;
-    }
-
-    .qty{
-        gap:8px;
-    }
-
-    .qty button{
-        width:32px;
-        height:32px;
-    }
-
-}
-@media(max-width:600px){
-
-.title-area h1{
-    font-size:25px;
-}
-
-.title-area p{
-    font-size:15px;
-}
-
-.back-btn{
-    padding:7px 14px;
-    top:14px;
-    left:10px;
-}
-
-}
+        grid-te
 
 
