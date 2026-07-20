@@ -175,3 +175,59 @@ footer h3{
 }
 
 }
+.hero{
+    background:
+    radial-gradient(circle at top right, rgba(212,175,55,0.35), transparent 35%),
+    radial-gradient(circle at bottom left, rgba(0,100,50,0.5), transparent 40%),
+    linear-gradient(135deg,#064d2b,#0b7a45);
+    
+    position:relative;
+    overflow:hidden;
+}
+
+.hero::before{
+    content:"✨";
+    position:absolute;
+    top:40px;
+    left:30px;
+    font-size:55px;
+    opacity:0.4;
+}
+
+.hero::after{
+    content:"✨";
+    position:absolute;
+    bottom:40px;
+    right:30px;
+    font-size:55px;
+    opacity:0.4;
+}
+
+.hero-content{
+    position:relative;
+    z-index:2;
+}
+
+.open-btn{
+    box-shadow:0 8px 20px rgba(0,0,0,0.25);
+}
+
+.category-box div{
+    transition:0.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+.category-box div:hover{
+    transform:translateY(-8px);
+}
+
+.logo-area h1{
+    text-shadow:0 3px 8px rgba(0,0,0,0.4);
+}
+
+.contact{
+    background:rgba(255,255,255,0.15);
+    display:inline-block;
+    padding:10px 20px;
+    border-radius:30px;
+    }
