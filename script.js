@@ -172,3 +172,35 @@ window.open(whatsappURL, "_blank");
 
 
 };
+const searchBox = document.getElementById("searchBox");
+const searchBtn = document.getElementById("searchBtn");
+
+function searchProduct() {
+  const value = searchBox.value.trim();
+
+  if (value === "") {
+    cards.forEach(card => {
+      card.style.display = "block";
+    });
+    return;
+  }
+
+  cards.forEach(card => {
+    const productNo = card.querySelector("h3").innerText.replace("#", "");
+
+    if (productNo === value.padStart(3, "0")) {
+      card.style.display = "block";
+      card.scrollIntoView({ behavior: "smooth", block: "center" });
+    } else {
+      card.style.display = "none";
+    }
+  });
+}
+
+searchBtn.onclick = searchProduct;
+
+searchBox.addEventListener("keypress", function(e) {
+  if (e.key === "Enter") {
+    searchProduct();
+  }
+});
