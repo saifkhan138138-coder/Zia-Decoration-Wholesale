@@ -263,22 +263,18 @@ footer h3{
     background:#064d2b;
     color:white;
     padding:15px;
-    display:flex;
+    display:grid;
+    grid-template-columns:auto 1fr auto;
     align-items:center;
-    justify-content:space-between;
-    flex-wrap:wrap;
-    gap:10px;
     border-bottom:3px solid #d4af37;
 }
 
-.topbar h2{
-    color:#d4af37;
-    margin:0;
-    font-size:30px;
+.topbar div{
+    text-align:center;
 }
 
-.topbar p{
-    margin:5px 0 0;
+.back-btn{
+    justify-self:start;
 }
 
 
