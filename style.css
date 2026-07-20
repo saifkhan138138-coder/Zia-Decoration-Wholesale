@@ -1,179 +1,177 @@
 *{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:Arial,sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
 }
 
 body{
-background:#111;
-color:white;
-}
-
-.topbar{
-    background:black;
-    color:gold;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-    padding:15px;
-}
-
-.summary{
-background:#1b1b1b;
-padding:15px;
-position:sticky;
-top:0;
-z-index:100;
-}
-
-#searchBox{
-width:100%;
-padding:12px;
-font-size:18px;
-border-radius:8px;
-border:none;
-margin-bottom:10px;
-}
-
-.counter{
-display:flex;
-justify-content:space-between;
-font-size:18px;
-}
-
-.products{
-display:grid;
-grid-template-columns:repeat(auto-fit,minmax(170px,1fr));
-gap:15px;
-padding:15px;
-}
-
-.card{
-background:#222;
-border:2px solid #333;
-border-radius:12px;
-padding:10px;
-text-align:center;
-transition:.3s;
-}
-
-.card h3{
-color:gold;
-margin-bottom:10px;
-}
-
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-border-radius:10px;
-}
-
-.qty{
-display:flex;
-justify-content:center;
-align-items:center;
-gap:10px;
-margin-top:12px;
-}
-
-.qty button{
-width:40px;
-height:40px;
-font-size:22px;
-border:none;
-background:gold;
-color:black;
-border-radius:50%;
-cursor:pointer;
-}
-
-.tick{
-display:none;
-font-size:28px;
-color:lime;
-margin-top:10px;
-}
-
-.order{
-position:fixed;
-bottom:0;
-left:0;
-width:100%;
-padding:15px;
-background:black;
-}
-.topbar h2{
-flex:1;
-text-align:center;
-margin:0;
-font-size:20px;
-}
-#orderBtn{
-width:100%;
-padding:15px;
-font-size:20px;
-font-weight:bold;
-background:gold;
-color:black;
-border:none;
-border-radius:10px;
-cursor:pointer;
+    background:#f7f5ef;
+    color:#222;
 }
 
 
-.back-btn{
-    background:gold;
-    color:black;
-    text-decoration:none;
-    padding:8px 14px;
-    border-radius:8px;
+/* Header */
+
+.top-header{
+    background:#064d2b;
+    padding:25px 15px;
+    text-align:center;
+    border-bottom:4px solid #d4af37;
+}
+
+.logo-area h1{
+    color:#d4af37;
+    font-size:32px;
     font-weight:bold;
+}
+
+.logo-area p{
+    color:white;
+    margin-top:8px;
     font-size:16px;
 }
 
-.back-btn:hover{
-background:white;
-  }
 
-.customer-form{
-background:#222;
-margin:15px;
-padding:15px;
-border-radius:12px;
+/* Hero Section */
+
+.hero{
+    min-height:520px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:30px 15px;
+
+    background:
+    linear-gradient(
+    rgba(0,70,35,0.75),
+    rgba(0,70,35,0.75)
+    );
 }
 
-.customer-form h3{
-color:gold;
-margin-bottom:12px;
+
+.hero-content{
+    max-width:600px;
 }
 
-.customer-form input{
-width:100%;
-padding:12px;
-margin-bottom:10px;
-border:none;
-border-radius:8px;
-font-size:16px;
-}
-.search-area{
-  display:flex;
-  align-items:center;
-  gap:8px;
+
+.hero h2{
+    color:#ffffff;
+    font-size:38px;
+    margin-bottom:15px;
 }
 
-.search-area input{
-  flex:1;
+
+.hero p{
+    color:#f5e7b2;
+    font-size:20px;
+    margin-bottom:20px;
 }
 
-.search-area button{
-  width:45px;
-  height:45px;
-  border:none;
-  border-radius:8px;
-  background:#d32f2f;
-  color:#fff;
-  font-size:18px;
-  cursor:pointer;
+
+.contact{
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    margin-bottom:30px;
+}
+
+
+/* Button */
+
+.open-btn{
+
+    display:inline-block;
+    background:#d4af37;
+    color:#064d2b;
+    padding:15px 35px;
+    border-radius:30px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight:bold;
+    transition:.3s;
+
+}
+
+
+.open-btn:hover{
+    background:white;
+}
+
+
+/* Categories */
+
+.categories{
+    padding:40px 15px;
+    text-align:center;
+}
+
+
+.categories h2{
+    color:#064d2b;
+    font-size:30px;
+    margin-bottom:25px;
+}
+
+
+.category-box{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+    gap:20px;
+
+}
+
+
+.category-box div{
+
+    background:white;
+    padding:25px 15px;
+    border-radius:15px;
+    border:2px solid #d4af37;
+    font-size:18px;
+    font-weight:bold;
+}
+
+
+/* Footer */
+
+footer{
+
+    background:#064d2b;
+    color:white;
+    text-align:center;
+    padding:25px 10px;
+    border-top:4px solid #d4af37;
+
+}
+
+
+footer h3{
+    color:#d4af37;
+    margin-bottom:10px;
+}
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+.logo-area h1{
+    font-size:25px;
+}
+
+.hero h2{
+    font-size:30px;
+}
+
+.hero p{
+    font-size:17px;
+}
+
+.contact{
+    font-size:18px;
+}
+
 }
