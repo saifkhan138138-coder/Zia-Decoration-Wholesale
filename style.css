@@ -257,3 +257,209 @@ footer h3{
 
 
 .open-btn
+/* Products Page Design */
+
+.topbar{
+    background:#064d2b;
+    color:white;
+    padding:18px 15px;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    border-bottom:3px solid #d4af37;
+}
+
+.topbar h2{
+    color:#d4af37;
+    margin:0;
+}
+
+.topbar p{
+    margin:5px 0 0;
+}
+
+
+.back-btn{
+    color:#064d2b;
+    background:#d4af37;
+    padding:8px 15px;
+    border-radius:20px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+
+.summary{
+    padding:20px 15px;
+    text-align:center;
+}
+
+
+.search-area{
+    display:flex;
+    justify-content:center;
+    gap:10px;
+}
+
+
+.search-area input{
+    padding:12px;
+    width:70%;
+    max-width:300px;
+    border:2px solid #d4af37;
+    border-radius:25px;
+}
+
+
+.search-area button{
+    background:#064d2b;
+    color:white;
+    border:none;
+    border-radius:50%;
+    width:45px;
+    height:45px;
+}
+
+
+.counter{
+    margin-top:15px;
+    font-weight:bold;
+    color:#064d2b;
+}
+
+
+
+.products{
+
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(160px,1fr));
+    gap:20px;
+    padding:20px;
+
+}
+
+
+
+.card{
+
+    background:white;
+    border:2px solid #d4af37;
+    border-radius:15px;
+    padding:15px;
+    text-align:center;
+    position:relative;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+}
+
+
+
+.card img{
+
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
+
+}
+
+
+.card h3{
+
+    color:#064d2b;
+
+}
+
+
+
+.qty{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    margin-top:15px;
+
+}
+
+
+
+.qty button{
+
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    border:none;
+    background:#064d2b;
+    color:white;
+    font-size:20px;
+
+}
+
+
+.tick{
+
+    position:absolute;
+    top:10px;
+    right:10px;
+    background:#d4af37;
+    color:#064d2b;
+    border-radius:50%;
+    padding:5px;
+    display:none;
+
+}
+
+
+
+.customer-form{
+
+    padding:20px;
+
+}
+
+
+.customer-form input{
+
+    width:100%;
+    padding:12px;
+    margin:8px 0;
+    border:1px solid #d4af37;
+    border-radius:10px;
+
+}
+
+
+
+.order{
+
+    text-align:center;
+    padding:20px;
+
+}
+
+
+#orderBtn{
+
+    background:#064d2b;
+    color:white;
+    padding:15px 35px;
+    border:none;
+    border-radius:30px;
+    font-size:18px;
+    font-weight:bold;
+
+}
+
+
+
+@media(max-width:600px){
+
+    .products{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+
+    }
