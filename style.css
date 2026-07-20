@@ -35,19 +35,18 @@ body{
 
 /* Hero Section */
 
-.hero{
-    min-height:520px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:30px 15px;
-
+..hero{
     background:
     linear-gradient(
     rgba(0,70,35,0.75),
     rgba(0,70,35,0.75)
-    );
+    ),
+    url("decoration-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+    position:relative;
+    overflow:hidden;
 }
 
 
