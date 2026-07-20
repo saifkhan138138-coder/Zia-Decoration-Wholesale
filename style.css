@@ -262,16 +262,19 @@ footer h3{
 .topbar{
     background:#064d2b;
     color:white;
-    padding:18px 15px;
+    padding:15px;
     display:flex;
     align-items:center;
-    gap:15px;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
     border-bottom:3px solid #d4af37;
 }
 
 .topbar h2{
     color:#d4af37;
     margin:0;
+    font-size:30px;
 }
 
 .topbar p{
@@ -450,16 +453,32 @@ footer h3{
     font-weight:bold;
 
 }
-
-
-
 @media(max-width:600px){
 
     .products{
-
-        grid-template-columns:repeat(2,1fr);
-
+        grid-template-columns:repeat(2,minmax(0,1fr));
+        gap:12px;
+        padding:12px;
     }
 
-
+    .card{
+        padding:10px;
     }
+
+    .card img{
+        height:130px;
+    }
+
+    .qty{
+        gap:8px;
+    }
+
+    .qty button{
+        width:32px;
+        height:32px;
+    }
+
+}
+
+
+
