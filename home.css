@@ -30,17 +30,13 @@ body{
 .open-btn{
     position:absolute;
     left:50%;
-    bottom:24%;
+    bottom:23%;
     transform:translateX(-50%);
-    background:#0b7a45;
-    color:#fff;
-    text-decoration:none;
-    font-size:16px;
-    font-weight:bold;
-    padding:10px 22px;
-    border-radius:30px;
-    border:2px solid #d4af37;
-    box-shadow:0 4px 10px rgba(0,0,0,.3);
+    width:220px;
+    height:60px;
+    background:transparent;
+    border:none;
+    cursor:pointer;
 }
 
 .open-btn:hover{
