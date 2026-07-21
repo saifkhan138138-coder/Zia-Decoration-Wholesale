@@ -163,7 +163,7 @@ message += "\nTotal Quantity: " + totalQty.innerText;
 
 
 let whatsappURL = 
-"https://wa.me/923456611435?text=" 
+"https://wa.me/923402000374?text=" 
 + encodeURIComponent(message);
 
 
