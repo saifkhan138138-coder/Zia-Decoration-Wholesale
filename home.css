@@ -32,7 +32,7 @@ body{
 .open-btn{
     position:absolute;
     left:50%;
-    bottom:23%;
+    bottom:28%;
     transform:translateX(-50%);
     z-index:9999;
 
