@@ -56,8 +56,8 @@ body{
     }
 
     .open-btn{
-        font-size:18px;
-        padding:14px 30px;
-        bottom:8%;
+        font-size:12px;
+        padding:6px 14px;
+        bottom:24%;
     }
 }
