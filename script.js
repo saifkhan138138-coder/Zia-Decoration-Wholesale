@@ -148,133 +148,61 @@ totalQty.innerText = quantity;
 
 const orderBtn = document.getElementById("orderBtn");
 
-
 orderBtn.onclick = () => {
 
+  const name = document.getElementById("customerName").value.trim();
+  const phone = document.getElementById("customerPhone").value.trim();
+  const city = document.getElementById("customerCity").value.trim();
+  const address = document.getElementById("customerAddress").value.trim();
 
-const name = document.getElementById("customerName").value.trim();
+  if (name === "" || phone === "" || city === "") {
+    alert("Please fill Name, Mobile Number and City.");
+    return;
+  }
 
-const phone = document.getElementById("customerPhone").value.trim();
+  let message = "Assalam-o-Alaikum\n\n";
+  message += "*Customer Details*\n";
+  message += "Name: " + name + "\n";
+  message += "Phone: " + phone + "\n";
+  message += "City: " + city + "\n";
 
-const city = document.getElementById("customerCity").value.trim();
+  if (address !== "") {
+    message += "Address: " + address + "\n";
+  }
 
-const address = document.getElementById("customerAddress").value.trim();
+  message += "\n*Order Details*\n";
 
+  let grandTotal = 0;
 
-
-if(name=="" || phone=="" || city==""){
-
-alert("Please fill Name, Mobile Number and City.");
-
-return;
-
-}
-
-
-
-let message = 
-"Assalam-o-Alaikum\n\n";
-
-
-message += "*Customer Details*\n";
-
-message += "Name: " + name + "\n";
-
-message += "Phone: " + phone + "\n";
-
-message += "City: " + city + "\n";
-
-
-if(address!=""){
-
-message += "Address: " + address + "\n";
-
-}
-
-
-message += "\n*Order Details*\n";
-
-let grandTotal = 0;
-
-cards.forEach(card => {
-
-    let product = card.querySelector("h3").innerText;
+  cards.forEach(card => {
 
     let qty = parseInt(card.querySelector(".qty span").innerText);
 
-    if(qty > 0){
+    if (qty > 0) {
 
-        let number = card.dataset.number;
-        let price = prices[number];
-        let total = price * qty;
+      let product = card.querySelector("h3").innerText;
+      let number = card.dataset.number;
+      let price = prices[number];
+      let total = price * qty;
 
-        grandTotal += total;
+      grandTotal += total;
 
-        message += product + " × " + qty +
-        " | Rs." + price +
-        " | Total: Rs." + total + "\n";
+      message += product + " × " + qty +
+      " | Rs." + price +
+      " | Total: Rs." + total + "\n";
     }
 
-});
+  });
 
-message += "\n*Order Details*\n";
+  message += "\nSelected Items: " + selectedItems.innerText;
+  message += "\nTotal Quantity: " + totalQty.innerText;
+  message += "\nGrand Total: Rs. " + grandTotal;
 
-let grandTotal = 0;
+  const whatsappURL =
+    "https://wa.me/923402000374?text=" +
+    encodeURIComponent(message);
 
-cards.forEach(card => {
-
-let product = card.querySelector("h3").innerText;
-
-let qty = parseInt(
-card.querySelector(".qty span").innerText
-);
-
-if(qty > 0){
-
-let number = card.dataset.number;
-let price = prices[number];
-let total = price * qty;
-
-grandTotal += total;
-
-message += product + " × " + qty +
-" | Rs." + price +
-" | Total: Rs." + total + "\n";
-
-}
-
-});
-
-});
-
-if(qty > 0){
-
-let number = card.dataset.number;
-let price = prices[number];
-let total = price * qty;
-
-grandTotal += total;
-
-message += product + " × " + qty +
-" | Rs." + price +
-" | Total: Rs." + total + "\n";
-
-}
-
-message += "\nSelected Items: " + selectedItems.innerText;
-
-message += "\nTotal Quantity: " + totalQty.innerText;
-
-message += "\nGrand Total: Rs. " + grandTotal;
-
-let whatsappURL = 
-"https://wa.me/923402000374?text=" 
-+ encodeURIComponent(message);
-
-
-
-window.open(whatsappURL, "_blank");
-
+  window.open(whatsappURL, "_blank");
 
 };
 const searchBox = document.getElementById("searchBox");
