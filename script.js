@@ -194,7 +194,7 @@ message += "Address: " + address + "\n";
 
 message += "\n*Order Details*\n";
 
-
+let grandTotal = 0;
 
 cards.forEach(card => {
 
