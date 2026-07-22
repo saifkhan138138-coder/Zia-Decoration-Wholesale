@@ -74,7 +74,13 @@ const tick = card.querySelector(".tick");
 let qty = 0;
 
 const productNo = card.querySelector("h3").innerText;
+const price = prices[card.dataset.number];
 
+const priceTag = document.createElement("p");
+priceTag.className = "price";
+priceTag.innerText = "Rs. " + price;
+
+card.querySelector("img").after(priceTag);
 
 plus.onclick = () => {
 
