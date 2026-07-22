@@ -208,16 +208,22 @@ card.querySelector(".qty span").innerText
 
 
 
-if(qty > 0){
-
-message += product + " × " + qty + "\n";
-
-}
-
 
 });
 
+if(qty > 0){
 
+let number = card.dataset.number;
+let price = prices[number];
+let total = price * qty;
+
+grandTotal += total;
+
+message += product + " × " + qty +
+" | Rs." + price +
+" | Total: Rs." + total + "\n";
+
+}
 
 message += "\nSelected Items: " + selectedItems.innerText;
 
