@@ -187,9 +187,9 @@ orderBtn.onclick = () => {
 
       grandTotal += total;
 
-      message += product + " × " + qty +
-      " | Rs." + price +
-      " | Total: Rs." + total + "\n";
+      message += "➡️ *" + product + "* × " + qty +
+" | Rs." + price +
+" | Total: Rs." + total + "\n";
     }
 
   });
