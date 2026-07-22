@@ -204,6 +204,18 @@ let qty = parseInt(
 card.querySelector(".qty span").innerText
 );
 
+message += "\n*Order Details*\n";
+
+let grandTotal = 0;
+
+cards.forEach(card => {
+
+let product = card.querySelector("h3").innerText;
+
+let qty = parseInt(
+card.querySelector(".qty span").innerText
+);
+
 if(qty > 0){
 
 let number = card.dataset.number;
@@ -217,6 +229,8 @@ message += product + " × " + qty +
 " | Total: Rs." + total + "\n";
 
 }
+
+});
 
 });
 
