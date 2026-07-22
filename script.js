@@ -229,7 +229,7 @@ message += "\nSelected Items: " + selectedItems.innerText;
 
 message += "\nTotal Quantity: " + totalQty.innerText;
 
-
+message += "\nGrand Total: Rs. " + grandTotal;
 
 let whatsappURL = 
 "https://wa.me/923402000374?text=" 
