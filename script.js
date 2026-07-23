@@ -259,3 +259,25 @@ searchBox.addEventListener("input", function() {
     showAllProducts();
   }
 });
+
+
+const imageModal = document.getElementById("imageModal");
+const zoomedImage = document.getElementById("zoomedImage");
+const closeImage = document.querySelector(".close-image");
+
+document.querySelectorAll(".card img").forEach(img => {
+  img.addEventListener("click", () => {
+    zoomedImage.src = img.src;
+    imageModal.style.display = "flex";
+  });
+});
+
+closeImage.addEventListener("click", () => {
+  imageModal.style.display = "none";
+});
+
+imageModal.addEventListener("click", (e) => {
+  if (e.target === imageModal) {
+    imageModal.style.display = "none";
+  }
+});
