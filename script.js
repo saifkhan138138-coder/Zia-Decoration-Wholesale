@@ -281,3 +281,11 @@ img.addEventListener("click", (e) => {
     zoomedImage.src = img.src;
     imageModal.style.display = "flex";
 });
+// Clear Search Button
+const clearSearchBtn = document.getElementById("clearSearchBtn");
+
+clearSearchBtn.onclick = () => {
+  searchBox.value = "";
+  showAllProducts();
+  searchBox.focus();
+};
