@@ -283,7 +283,7 @@ imageModal.addEventListener("click", () => {
   imageModal.style.display = "none";
 });
 // Clear Search Button
-const clearSearchBtn = document.getElementById("clearSearch");
+const clearSearchBtn = document.getElementById("clearSearchBtn");
 
 clearSearchBtn.onclick = () => {
   searchBox.value = "";
