@@ -265,8 +265,14 @@ const imageModal = document.getElementById("imageModal");
 const zoomedImage = document.getElementById("zoomedImage");
 const closeImage = document.querySelector(".close-image");
 
+// Image Zoom
+const imageModal = document.getElementById("imageModal");
+const zoomedImage = document.getElementById("zoomedImage");
+const closeImage = document.querySelector(".close-image");
+
 document.querySelectorAll(".card img").forEach(img => {
-  img.addEventListener("click", () => {
+  img.addEventListener("click", (e) => {
+    e.stopPropagation();
     zoomedImage.src = img.src;
     imageModal.style.display = "flex";
   });
@@ -276,10 +282,8 @@ closeImage.addEventListener("click", () => {
   imageModal.style.display = "none";
 });
 
-img.addEventListener("click", (e) => {
-    e.stopPropagation();
-    zoomedImage.src = img.src;
-    imageModal.style.display = "flex";
+imageModal.addEventListener("click", () => {
+  imageModal.style.display = "none";
 });
 // Clear Search Button
 const clearSearchBtn = document.getElementById("clearSearchBtn");
