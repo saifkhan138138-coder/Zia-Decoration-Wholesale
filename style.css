@@ -568,3 +568,25 @@ footer h3{
 #clearSearchBtn:hover{
     background:#b71c1c;
 }
+.clear-btn{
+  width:58px;
+  height:58px;
+  border:none;
+  border-radius:50%;
+  background:#ff3b30;
+  color:#fff;
+  font-size:34px;
+  font-weight:700;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  cursor:pointer;
+  box-shadow:0 4px 10px rgba(0,0,0,.18);
+  transition:.2s;
+}
+
+.clear-btn:hover,
+.clear-btn:active{
+  transform:scale(.95);
+  background:#e53935;
+    }
