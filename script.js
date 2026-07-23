@@ -265,10 +265,7 @@ const imageModal = document.getElementById("imageModal");
 const zoomedImage = document.getElementById("zoomedImage");
 const closeImage = document.querySelector(".close-image");
 
-// Image Zoom
-const imageModal = document.getElementById("imageModal");
-const zoomedImage = document.getElementById("zoomedImage");
-const closeImage = document.querySelector(".close-image");
+
 
 document.querySelectorAll(".card img").forEach(img => {
   img.addEventListener("click", (e) => {
