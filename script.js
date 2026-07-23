@@ -276,8 +276,8 @@ closeImage.addEventListener("click", () => {
   imageModal.style.display = "none";
 });
 
-imageModal.addEventListener("click", (e) => {
-  if (e.target === imageModal) {
-    imageModal.style.display = "none";
-  }
+img.addEventListener("click", (e) => {
+    e.stopPropagation();
+    zoomedImage.src = img.src;
+    imageModal.style.display = "flex";
 });
