@@ -237,43 +237,42 @@ footer h3{
 
 
 .qty{
-
     display:flex;
-    justify-content:center;
+    justify-content:space-between;
     align-items:center;
-    gap:15px;
+
+    background:#d32f2f;
+    border-radius:12px;
+
+    padding:8px 10px;
     margin-top:15px;
-
 }
-
 
 .qty span{
-
-    font-size:20px;
-    font-weight:bold;
-
-}
-
-
-.qty button{
-
-    width:38px;
-    height:38px;
-    border-radius:50%;
-    border:none;
-    background:#064d2b;
     color:white;
     font-size:22px;
-    cursor:pointer;
-
+    font-weight:bold;
+    min-width:30px;
+    text-align:center;
 }
 
+.qty button{
+    width:34px;
+    height:34px;
+
+    border:none;
+    border-radius:8px;
+
+    background:white;
+    color:#d32f2f;
+
+    font-size:22px;
+    font-weight:bold;
+    cursor:pointer;
+}
 
 .qty button:hover{
-
-    background:#d4af37;
-    color:#064d2b;
-
+    background:#ffe5e5;
 }
 
 
