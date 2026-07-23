@@ -76,12 +76,17 @@ let qty = 0;
 const productNo = card.querySelector("h3").innerText;
 const price = prices[card.dataset.number];
 
-const priceTag = document.createElement("p");
-priceTag.className = "price";
-priceTag.textContent = "Rs. " + price;
-
 const qtyBox = card.querySelector(".qty");
-card.insertBefore(priceTag, qtyBox);
+
+let priceTag = card.querySelector(".price");
+
+if (!priceTag) {
+  priceTag = document.createElement("p");
+  priceTag.className = "price";
+  qtyBox.before(priceTag);
+}
+
+priceTag.textContent = "Rs. " + price;
 
 plus.onclick = () => {
 
