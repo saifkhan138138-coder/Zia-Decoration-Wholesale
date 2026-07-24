@@ -601,3 +601,39 @@ footer h3{
     font-size:40px;
     cursor:pointer;
 }
+/* ===== Products Grid V2 ===== */
+
+.products{
+    padding:15px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.card{
+    background:#fff;
+    border:1px solid #ddd;
+    border-radius:12px;
+    overflow:hidden;
+    position:relative;
+    padding:6px;
+}
+
+.product-number{
+    text-align:center;
+    font-size:15px;
+    font-weight:bold;
+    color:#064d2b;
+    margin-bottom:5px;
+}
+
+.card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:8px;
+    cursor:pointer;
+}
