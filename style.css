@@ -590,3 +590,58 @@ footer h3{
   transform:scale(.95);
   background:#e53935;
     }
+/* ===== Zia Decoration V2 Products ===== */
+
+.products{
+    padding:15px;
+}
+
+.grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    border:1px solid #ddd;
+    position:relative;
+    padding:6px;
+}
+
+.product-number{
+    text-align:center;
+    font-weight:bold;
+    color:#064d2b;
+    margin-bottom:5px;
+    font-size:15px;
+}
+
+.card img{
+    width:100%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.tick{
+    position:absolute;
+    top:8px;
+    right:8px;
+    width:24px;
+    height:24px;
+    background:#0b7a45;
+    color:#fff;
+    border-radius:50%;
+    display:none;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+}
+
+.card.selected .tick{
+    display:flex;
+    }
