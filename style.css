@@ -637,3 +637,73 @@ footer h3{
     border-radius:8px;
     cursor:pointer;
 }
+/* ===== Tick ===== */
+
+.tick{
+    position:absolute;
+    top:8px;
+    right:8px;
+    width:24px;
+    height:24px;
+    background:#0b7a45;
+    color:#fff;
+    border-radius:50%;
+    display:none;
+    align-items:center;
+    justify-content:center;
+    font-size:14px;
+    font-weight:bold;
+}
+
+.card.selected .tick{
+    display:flex;
+}
+
+
+/* ===== Popup ===== */
+
+.product-modal{
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.85);
+    z-index:9999;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    padding:20px;
+}
+
+.product-modal.active{
+    display:flex;
+}
+
+.product-modal img{
+    width:90%;
+    max-width:420px;
+    border-radius:15px;
+    background:#fff;
+}
+
+.close-modal{
+    position:absolute;
+    top:15px;
+    right:20px;
+    color:#fff;
+    font-size:40px;
+    cursor:pointer;
+}
+
+#popupNumber{
+    color:#fff;
+    margin-top:15px;
+    font-size:24px;
+    font-weight:bold;
+}
+
+#popupPrice{
+    color:#FFD700;
+    font-size:22px;
+    font-weight:bold;
+    margin:10px 0 20px;
+}
