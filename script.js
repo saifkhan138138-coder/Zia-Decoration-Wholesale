@@ -53,17 +53,10 @@ document.getElementById("productModal")
 });
 
 
-// CLOSE POPUP
-
-document.getElementById("closeModal").onclick = () => {
-
-document.getElementById("productModal")
-.classList.remove("active");
-
-};
 
 
-// PLUS BUTTON
+
+
 
 document.getElementById("plusBtn").onclick = () => {
 
