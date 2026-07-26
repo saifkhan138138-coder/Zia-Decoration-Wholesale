@@ -61,20 +61,12 @@ document.getElementById("closeModal").onclick = () => {
 };
 // PLUS BUTTON
 
-
-
-
-
-
-
-
-
-
+document.getElementById("plusBtn").onclick = () => {
 
 let number = currentCard.dataset.number;
 
 if(!orders[number]){
-orders[number]=0;
+    orders[number]=0;
 }
 
 orders[number]++;
