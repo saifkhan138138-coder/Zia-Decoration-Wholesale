@@ -61,7 +61,7 @@ document.getElementById("closeModal").onclick = () => {
 };
 // PLUS BUTTON
 
-document.getElementById("plusBtn").onclick = () => {
+
 
 
 
