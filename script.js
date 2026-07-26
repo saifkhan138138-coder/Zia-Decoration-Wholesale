@@ -388,3 +388,36 @@ window.open(url,"_blank");
 
 
 };
+function showNextProduct() {
+
+    let current = parseInt(currentCard.dataset.number);
+
+    if (current < cards.length) {
+
+        current++;
+
+        currentCard = document.querySelector(
+            `.card[data-number="${String(current).padStart(3, "0")}"]`
+        );
+
+        currentCard.click();
+    }
+
+}
+
+function showPreviousProduct() {
+
+    let current = parseInt(currentCard.dataset.number);
+
+    if (current > 1) {
+
+        current--;
+
+        currentCard = document.querySelector(
+            `.card[data-number="${String(current).padStart(3, "0")}"]`
+        );
+
+        currentCard.click();
+    }
+
+}
