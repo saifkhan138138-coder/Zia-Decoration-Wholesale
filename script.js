@@ -22,7 +22,27 @@ let orders = {};
 let currentCard = null;
 let startX = 0;
 let endX = 0;
+function openProduct(card){
 
+    currentCard = card;
+
+    let number = card.dataset.number;
+
+    document.getElementById("popupImage").src =
+    card.querySelector("img").src;
+
+    document.getElementById("popupNumber").innerText =
+    "#" + number;
+
+    document.getElementById("popupPrice").innerText =
+    "Rs. " + prices[number];
+
+    document.getElementById("popupQty").innerText =
+    orders[number] || 0;
+
+    document.getElementById("productModal")
+    .classList.add("active");
+}
 // PRODUCT CLICK OPEN POPUP
 
 cards.forEach(card => {
