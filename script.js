@@ -43,7 +43,11 @@ function openProduct(card){
     document.getElementById("productModal")
     .classList.add("active");
 }
+// PRODUCT CLICK OPEN POPUP
 
+cards.forEach(card => {
+    card.onclick = () => openProduct(card);
+});
 // CLOSE POPUP
 
 document.getElementById("closeModal").onclick = () => {
