@@ -43,6 +43,25 @@ function openProduct(card){
     document.getElementById("productModal")
     .classList.add("active");
 }
+function showNextProduct() {
+
+    let next = currentCard.nextElementSibling;
+
+    if(next && next.classList.contains("card")){
+        openProduct(next);
+    }
+
+}
+
+function showPreviousProduct() {
+
+    let prev = currentCard.previousElementSibling;
+
+    if(prev && prev.classList.contains("card")){
+        openProduct(prev);
+    }
+
+}
 // PRODUCT CLICK OPEN POPUP
 
 cards.forEach(card => {
