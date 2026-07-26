@@ -56,6 +56,25 @@ document.getElementById("closeModal").onclick = () => {
     .classList.remove("active");
 
 };
+const modal = document.getElementById("productModal");
+
+modal.addEventListener("touchstart", (e) => {
+    startX = e.changedTouches[0].screenX;
+});
+
+modal.addEventListener("touchend", (e) => {
+
+    endX = e.changedTouches[0].screenX;
+
+    if (startX - endX > 50) {
+        showNextProduct();
+    }
+
+    if (endX - startX > 50) {
+        showPreviousProduct();
+    }
+
+});
 // PLUS BUTTON
 
 document.getElementById("plusBtn").onclick = () => {
