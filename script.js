@@ -48,9 +48,11 @@ orders[number] || 0;
 
 document.getElementById("productModal")
 .classList.add("active");
-
+};
 
 });
+
+
 
 
 
