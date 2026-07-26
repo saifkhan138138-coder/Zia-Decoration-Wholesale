@@ -43,34 +43,7 @@ function openProduct(card){
     document.getElementById("productModal")
     .classList.add("active");
 }
-// PRODUCT CLICK OPEN POPUP
 
-cards.forEach(card => {
-
-card.onclick = () => {
-
-currentCard = card;
-
-let number = card.dataset.number;
-
-document.getElementById("popupImage").src =
-card.querySelector("img").src;
-
-document.getElementById("popupNumber").innerText =
-"#" + number;
-
-document.getElementById("popupPrice").innerText =
-"Rs. " + prices[number];
-
-document.getElementById("popupQty").innerText =
-orders[number] || 0;
-
-
-document.getElementById("productModal")
-.classList.add("active");
-};
-
-});
 // CLOSE POPUP
 
 document.getElementById("closeModal").onclick = () => {
