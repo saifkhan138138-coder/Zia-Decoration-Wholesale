@@ -69,7 +69,7 @@ document.getElementById("plusBtn").onclick = () => {
 
 
 
-document.getElementById("plusBtn").onclick = () => {
+
 
 let number = currentCard.dataset.number;
 
