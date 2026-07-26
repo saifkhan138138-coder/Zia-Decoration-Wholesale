@@ -20,7 +20,8 @@ const totalQty = document.getElementById("totalQty");
 let orders = {};
 
 let currentCard = null;
-
+let startX = 0;
+let endX = 0;
 
 // PRODUCT CLICK OPEN POPUP
 
